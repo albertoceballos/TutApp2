@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aac088.tutapp.RegisterActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/reg_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:titleTextColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/reg_name_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/reg_email_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reg_name_et"
+        android:layout_alignStart="@+id/reg_name_et"
+        android:layout_below="@+id/reg_name_et"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/reg_pass_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reg_email_et"
+        android:layout_alignStart="@+id/reg_email_et"
+        android:layout_below="@+id/reg_email_et"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/reg_confirm_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reg_pass_et"
+        android:layout_alignStart="@+id/reg_pass_et"
+        android:layout_below="@+id/reg_pass_et"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/reg_type_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reg_confirm_et"
+        android:layout_alignStart="@+id/reg_confirm_et"
+        android:layout_below="@+id/reg_confirm_et"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="Student or Teacher?"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/reg_reg_btn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/reg_type_et"
+        android:layout_alignRight="@+id/reg_type_et"
+        android:layout_below="@+id/reg_type_et"
+        android:layout_marginTop="45dp"
+        android:background="@color/colorPrimary"
+        android:text="Register"
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>

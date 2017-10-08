@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aac088.tutapp.AppointmentRequestActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Set Up an Appointment"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:layout_below="@+id/apnt_request_toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/apnt_request_name_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/apnt_request_email_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/apnt_request_name_et"
+        android:layout_alignStart="@+id/apnt_request_name_et" />
+
+    <EditText
+        android:id="@+id/apnt_date_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/apnt_request_email_et"
+        android:layout_alignLeft="@+id/apnt_request_email_et"
+        android:layout_alignStart="@+id/apnt_request_email_et" />
+
+    <Button
+        android:id="@+id/apnt_request_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/apnt_date_et"
+        android:layout_alignRight="@+id/apnt_date_et"
+        android:layout_below="@+id/apnt_date_et"
+        android:layout_marginTop="54dp"
+        android:background="@color/colorPrimary"
+        android:text="Send Request"
+        android:textColor="@android:color/background_light" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/apnt_request_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:titleTextColor="@android:color/background_light" />
+
+</RelativeLayout>

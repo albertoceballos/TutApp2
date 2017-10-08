@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aac088.tutapp.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@android:drawable/ic_menu_myplaces"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/login_username_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/login_password_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_username_et"
+        android:layout_alignStart="@+id/login_username_et"
+        android:layout_below="@+id/login_username_et"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:background="@color/colorPrimary"
+        android:text="Log in"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/login_new_user_txtvw"
+        android:layout_alignRight="@+id/login_password_et"
+        android:layout_alignEnd="@+id/login_password_et" />
+
+    <TextView
+        android:id="@+id/login_new_user_txtvw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="New User?"
+        android:textSize="24sp"
+        android:layout_below="@+id/login_password_et"
+        android:layout_alignRight="@+id/login_password_et"
+        android:layout_alignEnd="@+id/login_password_et" />
+</RelativeLayout>
